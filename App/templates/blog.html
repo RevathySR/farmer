@@ -1,0 +1,1120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<title>Germinate an Agriculture Category Flat Bootstrap Responsive Website Template | Home </title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Germinate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+<!-- //js -->
+<link href="{% static 'css/mislider.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/mislider-custom.css' %}" rel="stylesheet" type="text/css" />
+<!-- font-awesome-icons -->
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- //font-awesome-icons -->
+<link href="http://fonts.googleapis.com/css?family=Bree+Serif&amp;subset=latin-ext" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+	
+<body>
+<script src='../../../../../../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script><script src="../../../../../../m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<script>
+(function(){
+	if(typeof _bsa !== 'undefined' && _bsa) {
+  		// format, zoneKey, segment:value, options
+  		_bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
+  	}
+})();
+</script>
+<script>
+(function(){
+if(typeof _bsa !== 'undefined' && _bsa) {
+	// format, zoneKey, segment:value, options
+	_bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
+}
+})();
+</script>
+<script>
+(function(){
+	if(typeof _bsa !== 'undefined' && _bsa) {
+  		// format, zoneKey, segment:value, options
+  		_bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
+  	}
+})();
+</script>
+<script>
+	(function(v,d,o,ai){ai=d.createElement("script");ai.defer=true;ai.async=true;ai.src=v.location.protocol+o;d.head.appendChild(ai);})(window, document, "../../../../../../vdo.ai/core/w3layouts/vdo.ai.js");
+	</script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-30027142-1', 'w3layouts.com');
+  ga('send', 'pageview');
+</script>
+<body>
+	<div class="blog-wrapper">
+		<div class="popup">
+			<div class="close" onclick="closeCreate()">
+				<h2><i class="fas fa-times"></i></h2>
+			</div>
+			<h1 style="font-size: 26px;color: rgb(35, 37, 36);margin-bottom: 25px;">Germinate</h1>
+			<h4 style="text-align: center;font-size: 15px;opacity: 0.5;margin-top: -15px;margin-bottom: 15px;">create a post</h4>
+			<form action="{% url 'createPost' %}" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="field">
+					<h3>Post title</h3>
+					<input type="text" placeholder="Enter your post title" required name = "title" class = "username1">
+				</div>
+				<div class="field">
+					<h3>Post description</h3>
+					<input type="text" placeholder="Enter description" required name = "description" class = "email1">
+				</div>
+				<div class="field">
+					<h3>choose image</h3>
+					<input type="file" name="image" accept="image/*">
+					
+				</div>
+				<p style="color: rgb(51, 49, 49);opacity: 0.7;width: 100%;text-align: center;display: none;font-size: 17px;justify-content: center;align-items: center;" class="err2">Username already exists</p>
+
+				<button type="submit">Create a new post</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="product-wrapper">
+		<div class="popup">
+			<div class="close" onclick="closeProduct()">
+				<h2><i class="fas fa-times"></i></h2>
+			</div>
+			<h1 style="font-size: 26px;color: rgb(35, 37, 36);margin-bottom: 25px;">Germinate</h1>
+			<h4 style="text-align: center;font-size: 15px;opacity: 0.5;margin-top: -15px;margin-bottom: 15px;">create a post</h4>
+			<form action="{% url 'createProduct' %}" method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="field">
+					<h3>Product name</h3>
+					<input type="text" placeholder="Enter your product title" required name = "name" class = "username1">
+				</div>
+				<div class="field">
+					<h3>Price</h3>
+					<input type="number" min = "1" placeholder="Enter price" required name = "price" class = "email1">
+				</div>
+				<div class="field">
+					<h3>Contact number</h3>
+					<input type="text" placeholder="Enter contact number" required name = "contact" class = "email1">
+				</div>
+				<div class="field">
+					<h3>choose product image</h3>
+					<input type="file" name="image" accept="image/*" required>
+					
+				</div>
+				<p style="color: rgb(51, 49, 49);opacity: 0.7;width: 100%;text-align: center;display: none;font-size: 17px;justify-content: center;align-items: center;" class="err2">Username already exists</p>
+
+				<button type="submit">Create a new post</button>
+			</form>
+		</div>
+	</div>
+	
+	<div class="chats" style="position: fixed;">
+		<div class="back" style="position: fixed;width: 25px;height: 25px;border-radius: 8px;background-color: #dfdfdf;z-index: 150;display: flex;justify-content: center;align-items: center;margin-bottom: 8px;top:230px;z-index: 1500;" onclick = backToChats()>
+			<h3 style="font-size: 13px;"><i class="fa-solid fa-arrow-left"></i></h3>
+		</div>
+		<h1 style="color: rgb(29, 29, 29);font-weight: normal;font-size: 18px;margin-bottom: 20px;width: 360px;background-color: #ffffff;position: fixed;height: 50px;z-index: 110;margin-top: -35px;display: flex;
+		justify-content: center;align-items: center;width:340px;">Germinate<span style="opacity: 0.5;">.chats</span></h1>
+		<!-- <div class="line"></div> -->
+		<!-- <h1 style="color: #fff;font-weight: 400;font-size: 16px;margin-top: 15px;display: flex;justify-content: space-between;align-items: center;">Stories<ion-icon name="caret-down-outline" style="font-size: 15px;opacity:0.5;margin-top:3px;transform: rotate(180deg);" onclick="showAllStories()"></ion-icon></h1> -->
+		<input type="hidden" name="" class = "storiesOpen" value = "open">
+		<input type="hidden" name="" class = "chatsOpen" value = "open">
+
+		<!-- <div class="stories-small">
+			<div class="story">
+					
+				<img src="https://content.thriveglobal.com/wp-content/uploads/2019/05/simon-sinek-big.jpg" alt="" class = "story-img">
+				
+				<div class="author-pic">
+					<img src="{% static 'images/stevejobs.png' %}" alt="">
+				</div>
+
+				<h3 class = "story-user">vaisakh_v</h3>
+			
+			</div>
+
+			<div class="story">
+				
+				<img src="https://4.bp.blogspot.com/-E_6o6odtTYA/WKLRJ8rDxLI/AAAAAAACkiM/7GNLijvTDc8LQZR-_Th7KAptObwI_ISNQCLcB/w1200-h630-p-k-no-nu/steve-jobs-photos-by-norman-seeff-1.jpg" alt="" class = "story-img">
+				
+				<div class="author-pic">
+					<img src="{% static 'images/simeon_sinek.jpg' %}" alt="">
+				</div>
+
+				<h3 class = "story-user">Ajeesh</h3>
+			
+			</div>
+
+
+			<div class="story">
+				
+				<img src="https://tse4.mm.bing.net/th/id/OIP.87lzXCvZyHf8_8kN7v-v3gHaEK?pid=ImgDet&rs=1" alt="" class = "story-img">
+				
+				<div class="author-pic">
+					<img src="{% static 'images/neil.png' %}" alt="">
+				</div>
+
+				<h3 class = "story-user">Noel</h3>
+			
+			</div>
+
+			<div class="story">
+					
+				<img src="https://cdn.wallpapersafari.com/4/74/VXajSw.jpg" alt="" class = "story-img">
+				
+				<div class="author-pic">
+					<img src="{% static 'images/dp2.png' %}" alt="">
+				</div>
+
+				<h3 class = "story-user">Pratuish</h3>
+			
+			</div>
+
+		</div>
+		<h1 style="color: #fff;font-weight: 400;font-size: 16px;margin-top: 15px;margin-bottom: 4px;display: flex;justify-content: space-between;align-items: center;">Chats <ion-icon name="caret-down-outline" style="font-size: 15px;opacity:0.5;margin-top:3px;transform: rotate(180deg);" onclick = "showAllChats()"></ion-icon></h1> -->
+
+		{% for user in all_users_list %}
+		{% if user.username  != request.user.username %}
+		<div class="chat chatWrap" onclick = "openChat(this)" >
+			<img src="{{user.image}}" alt="">
+			<div class="chatUser">
+				<h3 class = "chat-username">{{user.username}}</h3>
+				<p><ion-icon name="checkmark-done-outline"></ion-icon> {{user.message}}</p>
+			</div>
+			<h4>{{user.time|date:'H:i'}}</h4>
+			<div class="numMessages">
+				<h2>4</h2>
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+
+		<!-- <div class="chat chatWrap">
+			<img src="https://cdn.wallpapersafari.com/4/74/VXajSw.jpg" alt="">
+			<div class="chatUser">
+				<h3>Prithviraj</h3>
+				<p><ion-icon name="checkmark-done-outline"></ion-icon>we should get a coffee...</p>
+			</div>
+			<h4>10:23pm</h4>
+			<div class="numMessages">
+				<h2>7</h2>
+			</div>
+		</div> -->
+		
+		<div class="chat-details" style="width: 100%;position: relative;margin-top: 20px;">
+			<!-- <div class="ChatLeft">
+				<div class="chat-left">
+					<p style="font-size: 14px;">Hello how are you doing?</p>
+				</div>
+			</div>
+			<div class="chatRight">
+
+			<div class="chat-right">
+				<p style="font-size: 14px;color: #fff;">Great! Thanks for asking</p>
+			</div>
+
+			</div>
+
+			<div class="ChatLeft">
+				<div class="chat-left">
+					<p style="font-size: 14px;">Hello how are you doing?</p>
+				</div>
+			</div> -->
+			<input type="hidden" name="" value="{{request.user.username}}" class="from_user1">
+			<input type="hidden" name="" value="" class="to_user1">
+			<div class="chatBox" style="color: rgb(41, 41, 41);font-weight: normal;font-size: 18px;width: 360px;background-color: #ffffff;position: fixed;height: 50px;z-index: 110;bottom: 100px;display: flex;
+		justify-content: center;align-items: center;gap: 15px;z-index: 1000;">
+			<input type="text" required placeholder="send a message" class="chat-msg">
+			<h3 style="transform: rotate(45deg);margin-top: -15px;opacity: 0.5;" onclick="sendMsg()"><i class="fa-solid fa-paper-plane"></i></h3>
+		</div>
+		</div>
+		
+
+		<!-- <div class="chat chatWrap">
+			<img src="https://4.bp.blogspot.com/-E_6o6odtTYA/WKLRJ8rDxLI/AAAAAAACkiM/7GNLijvTDc8LQZR-_Th7KAptObwI_ISNQCLcB/w1200-h630-p-k-no-nu/steve-jobs-photos-by-norman-seeff-1.jpg" alt="">
+			<div class="chatUser">
+				<h3>Ajeesh</h3>
+				<p><ion-icon name="checkmark-done-outline"></ion-icon> Hope you are doing fine..</p>
+			</div>
+			<h4>10:21pm</h4>
+			<div class="numMessages">
+				<h2>5</h2>
+			</div>
+		</div>
+		<div class="chat chatWrap">
+			<img src="https://tse4.mm.bing.net/th/id/OIP.87lzXCvZyHf8_8kN7v-v3gHaEK?pid=ImgDet&rs=1" alt="">
+			<div class="chatUser">
+				<h3>Noel</h3>
+				<p><ion-icon name="checkmark-done-outline"></ion-icon> How is your day going?</p>
+			</div>
+			<h4>10:18pm</h4>
+			<div class="numMessages">
+				<h2>2</h2>
+			</div>
+		</div>
+
+		<div class="chat chatWrap">
+			<img src="https://cdn.wallpapersafari.com/4/74/VXajSw.jpg" alt="">
+			<div class="chatUser">
+				<h3>Pratuish</h3>
+				<p><ion-icon name="checkmark-done-outline"></ion-icon> How is your day going?</p>
+			</div>
+			<h4>10:14pm</h4>
+			<div class="numMessages">
+				<h2>8</h2>
+			</div>
+		</div> -->
+
+		
+
+		<!-- <div class="chat chatWrap">
+			<img src="{% static 'images/simon-sinek-big.jpg' %}" alt="">
+			<div class="chatUser">
+				<h3>vaisakh</h3>
+				<p><ion-icon name="checkmark-done-outline"></ion-icon> How is your day going?</p>
+			</div>
+			<h4>10:14pm</h4>
+			<div class="numMessages">
+				<h2>8</h2>
+			</div>
+		</div> -->
+	</div>
+	<div class="crop" style="display: none;flex-direction: column;justify-content: center;align-items: center;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.2);backdrop-filter: blur(5px);position: fixed;top:0;z-index: 1000;left: 0;">
+		<h4 style="position: absolute;top: 50px;right: 50px;color: white;font-size: 25px;cursor: pointer;" onclick="closeCrop()"><i class="fa-solid fa-xmark"></i></h4>
+		<h1>Crop yield prediction</h1>
+		<p style="margin-bottom: 28px;margin-top: 10px;">Enter the values below</p>
+		<div class="inputs" style="display: flex;justify-content: center;align-items: center;gap: 45px;flex-wrap: wrap;">
+			<div class="input">
+				<h3>Nitrogen</h3>
+				<input type="number" min="0" class = "nitrogen">
+			</div>
+			<div class="input">
+				<h3>Phosphorous</h3>
+				<input type="number" min="0" class = "phosphorous">
+			</div>
+			<div class="input">
+				<h3>Pottassium</h3>
+				<input type="number" min="0" class = "pottassium">
+			</div>
+			<div class="input">
+				<h3>Temparature</h3>
+				<input type="number" min="0" class = "temparature">
+			</div>
+			<div class="input">
+				<h3>Humidity</h3>
+				<input type="number" min="0" class = "humidity">
+			</div>
+			<div class="input">
+				<h3>Ph</h3>
+				<input type="number" min="0" class = "ph">
+			</div>
+			<div class="input">
+				<h3>Rainfall</h3>
+				<input type="number" min="0" class = "rainfall">
+			</div>
+		</div>
+		<button onclick="sendDetails()">Get recommended crop</button>
+		<h3 class="prediction" style="color: white;margin-top: 25px;margin-bottom: 15px;"></h3>
+		<p class="description" style="color: white;width: 80%;text-align: center;line-height: 35px;font-size: 20px;"></p>
+	</div>
+	<div class="login-wrapper">
+		<div class="popup">
+			<div class="close" onclick="closeLogin()">
+				<h2><i class="fas fa-times"></i></h2>
+			</div>
+			<h1 style="font-size: 26px;color: rgb(29, 143, 118);margin-bottom: 25px;">Germinate</h1>
+
+			<form action="{% url 'login' %}" method="POST">
+				{% csrf_token %}
+				<div class="field">
+					<h3>Username</h3>
+					<input type="text" placeholder="Enter your username" required name = "username" class="userName">
+				</div>
+				<div class="field">
+					<h3>Password</h3>
+					<input type="password" placeholder="Enter your password" required name = "password" class="password">
+				</div>
+				<center><p class="error" style="display: none;text-align: center;margin-top: 8px;margin-bottom: 8px;width: 100%;justify-content: center;align-items: center;">Invalid login credentials</p></center>
+				<button type="button" onclick="sendData()">Login in to my account</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="signup-wrapper">
+		<div class="popup">
+			<div class="close" onclick="closeSignup()">
+				<h2><i class="fas fa-times"></i></h2>
+			</div>
+			<h1 style="font-size: 26px;color: rgb(29, 143, 118);margin-bottom: 25px;">Germinate</h1>
+			<form action="" method="POST">
+				{% csrf_token %}
+				<div class="field">
+					<h3>Username</h3>
+					<input type="text" placeholder="Enter your username" required name = "username" class = "username1">
+				</div>
+				<div class="field">
+					<h3>Email address</h3>
+					<input type="email" placeholder="Enter your email" required name = "email" class = "email1">
+				</div>
+				<div class="field">
+					<h3>Password</h3>
+					<input type="password" placeholder="Enter your password" required minlength="5" name = "password" class = "password1">
+					
+				</div>
+				<p style="color: rgb(51, 49, 49);opacity: 0.7;width: 100%;text-align: center;display: none;font-size: 17px;justify-content: center;align-items: center;" class="err2">Username already exists</p>
+
+				<button onclick="checkSignup()" type="button">Create a new account</button>
+			</form>
+		</div>
+	</div>
+
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<div class="w3_agileits_banner_main_grid">
+				<div class="w3_agile_logo">
+					<h1><a href="index.html"><span>G</span>erminate<i>Grow healthy products</i></a></h1>
+				</div>
+				<div class="agile_social_icons_banner">
+					<ul class="agileits_social_list">
+						<!-- <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> -->
+						<!-- <li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
+						<!-- <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li> -->
+						<!-- <li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li> -->
+					</ul>
+				</div>
+				<div class="agileits_w3layouts_menu">
+					<div class="shy-menu">
+						<a class="shy-menu-hamburger">
+							<span class="layer top"></span>
+							<span class="layer mid"></span>
+							<span class="layer btm"></span>
+						</a>
+						<div class="shy-menu-panel">
+							<nav class="menu menu--horatio link-effect-8" id="link-effect-8">
+								<ul class="w3layouts_menu__list">
+									<li class="active"><a href="{% url 'homepage' %}">Home</a></li>
+									<!-- <li><a href="about.html">About Us</a></li>  -->
+									{% if not request.user.is_authenticated %}
+									<li onclick="showLogin()"><a>Login</a></li> 
+									<li onclick="showSignup()"><a>Signup</a></li>
+									{% else %}
+									{% if profile.is_farmer %}
+									<li onclick="showProduct()"><a>upload product</a> </li>
+									{% else %}
+									<li><a href="{% url 'products' %}">Products</a> </li>
+									{% endif %}
+									<li onclick="showCreate()"><a>create post</a> </li>
+									<li ><a href="{% url 'ads' %}">Advertisements</a> </li>
+									<li><a href="{% url 'logout' %}">Logout</a></li>
+									{% endif %}
+								</ul>
+							</nav>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3_banner_info">
+				<div class="w3_banner_info_grid">
+					<h3 class="test">I'm Planting A Tree To Teach Me To Gather Strength From My Deepest Roots</h3>
+					<p>Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit 
+						sollicitudin. Nunc tortor lorem, viverra sed diam ut, blandit efficitur leo.</p>
+					<ul>
+						<!-- <li><a href="contact.html" class="w3l_contact">Contact Us</a></li> -->
+						<li onclick="showCrop()"><a href="#" class="w3ls_more"  data-target="#myModal">Crop yield prediction</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="thim-click-to-bottom">
+				<a href="#welcome_bottom" class="scroll">
+					<i class="fa  fa-chevron-down"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+<!-- banner -->
+<!---728x90--->
+
+<!-- bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					Germinate
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<img src="{% static 'images/4.jpg' %}" alt=" " class="img-responsive" />
+						<p>Ut enim ad minima veniam, quis nostrum 
+							exercitationem ullam corporis suscipit laboriosam, 
+							nisi ut aliquid ex ea commodi consequatur? Quis autem 
+							vel eum iure reprehenderit qui in ea voluptate velit 
+							esse quam nihil molestiae consequatur, vel illum qui 
+							dolorem eum fugiat quo voluptas nulla pariatur.
+							<i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+								esse quam nihil molestiae consequatur.</i></p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+<!-- //bootstrap-pop-up -->
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="col-md-4 agileits_banner_bottom_left">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class="col-xs-4 wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa-solid fa-carrot"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_banner_bottom_grid_right" onclick="showCrop()" style="cursor: pointer;">	
+						<h4>Crop yield prediction</h4>
+						<p>users will be able to to know which crop is suitable for their soil.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 agileits_banner_bottom_left1">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class="col-xs-4 wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa fa-certificate" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_banner_bottom_grid_right">	
+						<h4>Goverment schemes</h4>
+						<p>view all govenment schemes <a href="https://agricoop.nic.in/en/ministry-major-schemes" style="color: rgb(19, 182, 30);"> here</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 agileits_banner_bottom_left2">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class="col-xs-4 wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_banner_bottom_grid_right">	
+						<h4>Free Helpline</h4>
+						<p>contact : 9565487585</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //banner-bottom -->
+<!---728x90--->
+
+<!-- welcome -->
+	<div class="welcome">
+		<div class="container">
+			<h3 class="agileits_w3layouts_head">{{blog.title}}</span></h3>
+			<div class="w3_agile_image">
+				<img src="{% static 'images/1.png' %}" alt=" " class="img-responsive" />
+			</div>
+            <center><img src="{{blog.image.url}}" alt="" style="width: 90%;object-fit: cover;height: 350px;margin-top: 50px;"></center>
+			<p >{{blog.description}}</p>
+		</div>
+
+        <center><h1 style="margin-top: 50px;margin-bottom: 15px;">Comments</h1></center>
+        <div class="comments" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+            <form action="{% url 'comment' %}" style="width: 60%;display: flex;justify-content: center;align-items: center;gap: 25px;" method="POST">
+                {% csrf_token %}
+                <input type="text" name="comment" id="" style="padding: 13px;width: 50%;border: none;outline: none;background-color: #e8e8e8;border-radius: 8px;" placeholder="add a comment" required>
+                <input type="hidden" name="pk" value = "{{blog.pk}}">
+                <button type="submit" style="padding: 13px;width: 200px;background-color: rgb(68, 68, 235);color: white;border-radius: 8px;border: none;outline: none;">Post</button>
+            </form>
+
+            <div class="all" style="display: flex;justify-content: center;align-items: center;margin-top: 100px;flex-direction: column;">
+                {% for comment in comments %}
+                <div class="comment" style="width: fit-content;display: flex;justify-content: center;align-items: center;flex-direction: column;border-bottom: 1px solid #dfdfdf;padding-bottom: 25px;margin-bottom: 20px;">
+                    <h3 style="font-size: 16px;">{{comment.user.username}}</h3>
+                    <h4 style="font-size: 14px;margin-top: 5px;opacity: 0.5;">{{comment.date}}</h4>
+                    <p style="width: 70%;text-align: center;margin-top: 15px;">{{comment.comment}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+<!---728x90--->
+
+		
+	</div>
+<!-- //welcome -->
+<!-- welcome-bottom -->
+	
+<!-- //welcome-bottom -->
+<!-- news -->
+	
+<!-- //newsletter -->
+<!-- footer -->
+	
+<!-- //footer -->
+<!-- stats -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'js/jquery.countup.js' %}"></script>
+		<script>
+			$('.counter').countUp();
+		</script>
+<!-- //stats -->
+<!-- mislider -->
+	<script src="{% static 'js/mislider.js' %}" type="text/javascript"></script>
+	<script type="text/javascript">
+        jQuery(function ($) {
+            var slider = $('.mis-stage').miSlider({
+                //  The height of the stage in px. Options: false or positive integer. false = height is calculated using maximum slide heights. Default: false
+                stageHeight: 380,
+                //  Number of slides visible at one time. Options: false or positive integer. false = Fit as many as possible.  Default: 1
+                slidesOnStage: false,
+                //  The location of the current slide on the stage. Options: 'left', 'right', 'center'. Defualt: 'left'
+                slidePosition: 'center',
+                //  The slide to start on. Options: 'beg', 'mid', 'end' or slide number starting at 1 - '1','2','3', etc. Defualt: 'beg'
+                slideStart: 'mid',
+                //  The relative percentage scaling factor of the current slide - other slides are scaled down. Options: positive number 100 or higher. 100 = No scaling. Defualt: 100
+                slideScaling: 150,
+                //  The vertical offset of the slide center as a percentage of slide height. Options:  positive or negative number. Neg value = up. Pos value = down. 0 = No offset. Default: 0
+                offsetV: -5,
+                //  Center slide contents vertically - Boolean. Default: false
+                centerV: true,
+                //  Opacity of the prev and next button navigation when not transitioning. Options: Number between 0 and 1. 0 (transparent) - 1 (opaque). Default: .5
+                navButtonsOpacity: 1,
+            });
+        });
+    </script>
+<!-- //mislider -->
+<!-- text-effect -->
+		<script type="text/javascript" src="{% static 'js/jquery.transit.js' %}"></script> 
+		<script type="text/javascript" src="{% static 'js/jquery.textFx.js' %}"></script> 
+		<script type="text/javascript">
+			$(document).ready(function() {
+					$('.test').textFx({
+						type: 'fadeIn',
+						iChar: 100,
+						iAnim: 1000
+					});
+			});
+		</script>
+<!-- //text-effect -->
+<!-- menu -->
+	<script>
+		$(function() {
+			
+			initDropDowns($("div.shy-menu"));
+
+		});
+
+		function initDropDowns(allMenus) {
+
+			allMenus.children(".shy-menu-hamburger").on("click", function() {
+				
+				var thisTrigger = jQuery(this),
+					thisMenu = thisTrigger.parent(),
+					thisPanel = thisTrigger.next();
+
+				if (thisMenu.hasClass("is-open")) {
+
+					thisMenu.removeClass("is-open");
+
+				} else {			
+					
+					allMenus.removeClass("is-open");	
+					thisMenu.addClass("is-open");
+					thisPanel.on("click", function(e) {
+						e.stopPropagation();
+					});
+				}
+				
+				return false;
+			});
+		}
+	</script>
+<!-- //menu -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		// $(document).ready(function() {
+		// 	/*
+		// 		var defaults = {
+		// 		containerID: 'toTop', // fading element id
+		// 		containerHoverID: 'toTopHover', // fading element hover id
+		// 		scrollSpeed: 1200,
+		// 		easingType: 'linear' 
+		// 		};
+		// 	*/
+								
+		// 	$().UItoTop({ easingType: 'easeOutQuart' });
+								
+		// 	});
+			function showLogin(){
+    document.querySelector('.login-wrapper').style.display = "flex"
+}
+
+function closeLogin(){
+    document.querySelector('.login-wrapper').style.display = "none"
+}
+
+function showSignup(){
+    document.querySelector('.signup-wrapper').style.display = "flex"
+}
+
+function closeSignup(){
+    document.querySelector('.signup-wrapper').style.display = "none"
+}
+
+function closeResult(){
+    document.querySelector('.result').style.display = "none"
+}
+	</script>
+
+<script>
+	function sendData(){
+		
+		var data = new FormData()
+
+		data.append("username", document.querySelector('.userName').value)
+		data.append("password", document.querySelector('.password').value)
+
+		
+
+		data.append("csrfmiddlewaretoken",'{{ csrf_token }}')
+		
+		$.ajax({
+
+			method:"POST",
+			url:'/checkLogin/',
+			processData:false,
+			contentType:false,
+			// MimeType:"multipart/form-data",
+			data:data,
+			success:function(res){
+				localStorage.setItem("message",res.message)
+
+				if(res.message === 0){
+					
+					login(data)
+					localStorage.setItem("username",document.querySelector('.userName').value)
+					localStorage.setItem('password',document.querySelector('.password').value)
+					// location.reload();
+					
+				}
+				else{
+					document.querySelector('.error').style.display = "flex"
+					
+				}
+				
+
+			}
+		})
+	}
+
+	function sendDetails(){
+                var data = new FormData()
+                
+                
+                // var text = document.querySelector('.text').value
+
+                data.append("nitrogen", document.querySelector('.nitrogen').value)
+                data.append("ph", document.querySelector('.ph').value)
+				data.append("phosphorous", document.querySelector('.phosphorous').value)
+				data.append("rainfall", document.querySelector('.rainfall').value)
+				data.append("pottassium", document.querySelector('.pottassium').value)
+				data.append("humidity", document.querySelector('.humidity').value)
+				data.append("temperature", document.querySelector('.humidity').value)
+                data.append("csrfmiddlewaretoken",'{{ csrf_token }}')
+                
+                $.ajax({
+
+                    method:"POST",
+                    url:'/cropPrediction/',
+                    processData:false,
+                    contentType:false,
+                    // MimeType:"multipart/form-data",
+                    data:data,
+                    success:function(res){
+                        
+						document.querySelector('.prediction').innerText = res.result
+                        document.querySelector('.description').innerText = res.description
+                    }
+                })
+
+        }
+
+	function login(data){
+
+
+		$.ajax({
+
+			method:"POST",
+			url:'/login/',
+			processData:false,
+			contentType:false,
+			MimeType:"multipart/form-data",
+			data:data,
+			success:function(res){
+				console.log("it worked :)")
+				location.reload();
+			}
+			})
+	}
+
+	function closeCrop(){
+		document.querySelector('.crop').style.display = "none"
+	}
+
+	function showCrop(){
+		document.querySelector('.crop').style.display = "flex"
+	}
+	function showChats(){
+            document.querySelector('.chats').style.display = "flex";
+            document.querySelector('.messageopen').style.display = "none";
+            document.querySelector('.messageclose').style.display = "flex";
+        }
+
+        function hideChats(){
+            document.querySelector('.chats').style.display = "none";
+            document.querySelector('.messageopen').style.display = "flex";
+            document.querySelector('.messageclose').style.display = "none";
+        }
+		function openChat(element){
+            var chats = document.querySelectorAll('.chat')
+
+            for(var i =0;i<chats.length;i++){
+                chats[i].style.display = "none"
+            }
+
+            document.querySelector(".chat-details").style.display = "block"
+
+            var data = new FormData()
+            document.querySelector(".to_user1").value = element.querySelector('.chat-username').innerText
+            data.append("username", document.querySelector('.to_user1').value)
+            console.log(element.querySelector('.chat-username').innerText);
+
+            var cLeft = document.querySelectorAll(".ChatLeft")
+
+            for(var i = 0;i<cLeft.length;i++){
+                cLeft[i].style.display = "none"
+            }
+
+            var cRight = document.querySelectorAll(".chatRight")
+
+            for(var i = 0;i<cRight.length;i++){
+                cRight[i].style.display = "none"
+            }
+
+            data.append("csrfmiddlewaretoken",'{{ csrf_token }}')
+            
+            $.ajax({
+
+                method:"POST",
+                url:'/chatsDisplay/',
+                processData:false,
+                contentType:false,
+                // MimeType:"multipart/form-data",
+                data:data,
+                success:function(res){
+                    
+                    for(var i =0;i<res.chats.length;i++){
+                        var code = `<div class="ChatLeft">
+                        <div class="chat-left">
+                            <p style="font-size: 14px;">${res.chats[i].message}</p>
+                        </div>
+                        </div>`
+                        console.log(res.chats[i].from_u == document.querySelector(".from_user1").value);
+                        if(res.chats[i].sent_by == document.querySelector(".from_user1").value){
+                        
+                        var chatLeft =document.createElement('div')
+                        chatLeft.classList.add('chatRight')
+                        }
+                        else{
+                        
+                        var chatLeft =document.createElement('div')
+                        chatLeft.classList.add('ChatLeft')
+                        }
+
+                        console.log("-----"+res.chats[i].from_u);
+                        if(res.chats[i].sent_by == document.querySelector(".from_user1").value){
+                        
+                        var chatbox = document.createElement('div')
+                        chatbox.classList.add('chat-right')
+                        
+                        }
+                        else{
+                            var chatbox =document.createElement('div')
+                            chatbox.classList.add('chat-left')
+                        }
+
+                        var p = document.createElement('p')
+                        p.innerText = res.chats[i].message;
+
+                        chatbox.append(p)
+
+                        chatLeft.append(chatbox)
+
+
+                        var chatsList = document.querySelector(".chat-details")
+                        chatsList.append(chatLeft)
+                    }
+
+                }
+            })
+
+        }
+
+        function sendMsg(){
+            var data = new FormData()
+
+            data.append("message", document.querySelector('.chat-msg').value)
+            data.append("to_user", document.querySelector('.to_user1').value)
+
+            console.log("=============+++"+document.querySelector('.to_user1').value);
+            
+
+            // var chatRight =document.createElement('div')
+            // chatRight.classList.add('chatRight')
+
+            // var chatbox = document.createElement('div')
+            //             chatbox.classList.add('chat-right')
+            // var p = document.createElement('p')
+            // p.innerText = document.querySelector('.chat-msg').value
+
+            // chatbox.append(p)
+
+            // chatRight.append(chatbox)
+            // var chatsList = document.querySelector(".chat-details")
+            // chatsList.append(chatRight)
+
+
+            data.append("csrfmiddlewaretoken",'{{ csrf_token }}')
+            
+            $.ajax({
+
+                method:"POST",
+                url:'/sendMsg/',
+                processData:false,
+                contentType:false,
+                // MimeType:"multipart/form-data",
+                data:data,
+                success:function(res){
+                    
+                    
+
+                    
+                        var chatRight =document.createElement('div')
+                        chatRight.classList.add('chatRight')
+
+                        var chatbox = document.createElement('div')
+                        chatbox.classList.add('chat-right')
+                        var p = document.createElement('p')
+                        p.innerText = document.querySelector('.chat-msg').value
+
+                        chatbox.append(p)
+
+                        chatRight.append(chatbox)
+                        var chatsList = document.querySelector(".chat-details")
+                        chatsList.append(chatRight)
+                    
+                    
+                    document.querySelector('.chat-msg').value =""
+                    
+                }
+            })
+        }
+
+        function backToChats(){
+            var chats = document.querySelectorAll('.chat')
+
+            for(var i =0;i<chats.length;i++){
+                chats[i].style.display = "flex"
+            }
+
+            document.querySelector('.chat-details').style.display = "none"
+        }
+
+		function checkSignup(){
+            var data = new FormData()
+
+            data.append("username", document.querySelector('.username1').value)
+            data.append("email", document.querySelector('.email1').value)
+            data.append("password", document.querySelector('.password1').value)
+           
+           
+            data.append("csrfmiddlewaretoken",'{{ csrf_token }}')
+
+            
+            $.ajax({
+
+                method:"POST",
+                url:'/checkSignup/',
+                processData:false,
+                contentType:false,
+                // MimeType:"multipart/form-data",
+                data:data,
+                success:function(res){
+                    // localStorage.setItem("message",res.message)
+
+                    if(res.message === 0){
+                        
+
+                            // alert("Valid email address!");
+                            
+                            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+                            if (document.querySelector('.email1').value.match(validRegex)) {
+
+                                // alert("Valid email address!");
+                                error = 0
+                                console.log("");
+
+                            } else {
+
+                                alert("Invalid email address!");
+                                error = 1
+                                
+
+                            }
+
+                            if (document.querySelector('.username1').value == "") {
+
+// alert("Valid email address!");
+                            error = 1
+                            alert("please enter a valid username!");
+
+
+                            } else {
+
+                                console.log("");
+                                error = 0
+
+                            }
+
+                            if (document.querySelector('.password1').value == "" ) {
+
+                                alert("please fill the password!");
+                                error = 1
+                                } 
+                                
+                                else if(document.querySelector('.password1').value.length < 7){
+
+                                alert("password length must be greater than 7");
+                                error = 1
+
+
+                                }
+
+                                else{
+                                    error = 0
+                                    
+                                }
+
+                                
+                            
+
+                        
+                        
+                        // localStorage.setItem("username",document.querySelector('.username').value)
+                        // localStorage.setItem('password',document.querySelector('.password').value)
+                        // location.reload();
+                        
+                    }
+                    else{
+                        
+
+                        document.querySelector('.err2').style.display = "flex"
+
+                    }
+
+                    if(error == 0){
+                                    signup(data)
+                                }
+                    
+
+                }
+            })
+        }
+
+		function showCreate(){
+				document.querySelector('.blog-wrapper').style.display = "flex"
+			}
+
+			function closeCreate(){
+				document.querySelector('.blog-wrapper').style.display = "none"
+			}
+
+			function showProduct(){
+				document.querySelector('.product-wrapper').style.display = "flex"
+			}
+
+			function closeProduct(){
+				document.querySelector('.product-wrapper').style.display = "none"
+			}
+   
+        function signup(data){
+            console.log("888888888");
+            $.ajax({
+
+                method:"POST",
+                url:'/register/',
+                processData:false,
+                contentType:false,
+                MimeType:"multipart/form-data",
+                data:data,
+                success:function(res){
+                    console.log("it worked :)")
+                    // location.reload();
+                }
+                })
+
+            }
+
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- //here ends scrolling icon -->
+</body>
+
+</html>
